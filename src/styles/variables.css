@@ -8,10 +8,11 @@
 	--black: hsl(0, 0%, 0%);
 	--box-br: 1rem 1rem 7rem 1rem;
 	--border-radius: 0.5rem;
+	--box-shadow: 0.3125rem 0.3125rem 0.625rem 0 rgba(0, 0, 0, 0.02);
 	--transition: 0.2s all ease-in-out;
 	/* Typography  */
 	--font-family: "Poppins", sans-serif;
-	--h1-size: clamp(1.75rem, 3.5vw, 4rem);
-	--p-size: clamp(.875rem, 1vw, 1.5rem);
+	--h1-size: clamp(1.75rem, 3.5vw, 3rem);
+	--p-size: clamp(0.875rem, 1vw, 1.5rem);
 	--middle-text: 0.75rem;
 }
