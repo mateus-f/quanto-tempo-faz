@@ -1,4 +1,8 @@
-# 🗓️ Quanto Tempo Faz? (Calculadora de Idade)
+<picture>
+  <source media="(prefers-color-scheme: dark)" width="40%" srcset="https://github.com/user-attachments/assets/cb34ee88-ee52-4d4d-afbc-598a0ae6bcd4" alt="Quanto tempo faz?" >
+  <source media="(prefers-color-scheme: light)" width="40%" srcset="https://github.com/user-attachments/assets/07b2fbfa-48f8-4b21-908e-d71426925766" alt="Quanto tempo faz?" >
+  <img width="40%" src="https://github.com/user-attachments/assets/07b2fbfa-48f8-4b21-908e-d71426925766" alt="Quanto tempo faz?" >
+</picture> 
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/mateus-f/quanto-tempo-faz)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mateus-f/quanto-tempo-faz/main)
