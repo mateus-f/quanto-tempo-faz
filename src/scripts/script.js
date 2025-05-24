@@ -55,6 +55,23 @@ function validateDate() {
 		isValid = false;
 	}
 
+	if (
+		inputDay.value > today.getDate() &&
+		inputMonth.value >= today.getMonth() + 1 &&
+		inputYear.value >= today.getFullYear()
+	) {
+		setError(inputDay, dayAlert, "Deve ser no passado");
+		isValid = false;
+	}
+
+	if (
+		inputMonth.value > today.getMonth() + 1 &&
+		inputYear.value >= today.getFullYear()
+	) {
+		setError(inputMonth, monthAlert, "Deve ser no passado");
+		isValid = false;
+	}
+
 	if (inputYear.value > today.getFullYear()) {
 		setError(inputYear, yearAlert, "Deve ser no passado");
 		isValid = false;
