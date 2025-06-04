@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "countup.js": "^2.9.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
