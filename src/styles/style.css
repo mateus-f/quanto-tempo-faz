@@ -23,14 +23,12 @@ main {
 
 #boy {
 	z-index: 1;
-	width: clamp(6.25rem, 20vw, 25rem);
-	min-width: 12.5rem;
+	width: clamp(12.5rem, 20vw, 25rem);
 }
 
 #container {
 	z-index: 2;
 	width: clamp(10rem, 60vw, calc(100% - 20vw));
-	max-height: 100%;
 
 	h1 {
 		font-size: var(--h1-size);
@@ -56,8 +54,6 @@ main {
 		border-radius: var(--box-br);
 		background: var(--white);
 		margin-bottom: 1.25rem;
-		height: clamp(18.75rem, 30dvh, 100%);
-		min-height: 50vh;
 		width: 100%;
 		box-shadow: var(--box-shadow);
 		-webkit-box-shadow: var(--box-shadow);
@@ -191,6 +187,11 @@ main {
 }
 
 @media (width <= 50.625rem) {
+	main {
+		align-items: start;
+		padding-block: 5vh;
+	}
+
 	#boy {
 		display: none;
 	}
@@ -204,9 +205,24 @@ main {
 	#container {
 		width: 100vw;
 	}
+
+	#attribution {
+		margin-bottom: 5vh;
+	}
 }
 
 @media (width <= 26.5625rem) {
+	#break-row {
+		display: inline;
+	}
+}
+
+@media (height <= 34.375rem){
+	main {
+		align-items: start;
+		padding-block: 5vh;
+	}
+
 	#break-row {
 		display: inline;
 	}
