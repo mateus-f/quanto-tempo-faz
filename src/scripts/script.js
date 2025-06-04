@@ -1,3 +1,5 @@
+import { CountUp } from "countup.js";
+
 // Captch all the HTML elements
 const form = document.querySelector("form"),
 	inputDay = document.getElementById("input-day"),
@@ -124,10 +126,10 @@ function setOutput(year, month, day) {
 		year--;
 	}
 
-	// Setting the output values
-	outputYears.innerText = year;
-	outputMonths.innerText = month;
-	outputDays.innerText = day;
+	// Using CountUp.js to animate the output values
+	countUpAnimation(outputDays, day);
+	countUpAnimation(outputMonths, month);
+	countUpAnimation(outputYears, year);
 }
 
 function setError(input, alert, message) {
@@ -147,4 +149,20 @@ function clearOutput() {
 	outputDays.innerText = "--";
 	outputMonths.innerText = "--";
 	outputYears.innerText = "--";
+}
+
+function countUpAnimation(element, endValue) {
+	let lastEndValue = parseInt(element.innerText, 10) || 0;
+	const options = {
+		startVal: lastEndValue,
+		separator: '',
+		duration: 2.5,
+	},
+	countUp = new CountUp(element, endValue, options);
+
+	if (!countUp.error) {
+		countUp.start();
+	} else {
+		console.error(countUp.error);
+	}
 }
