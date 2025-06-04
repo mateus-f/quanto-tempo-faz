@@ -18,8 +18,7 @@ Este projeto foi desenvolvido como parte do desafio do Frontend Mentor. A aplica
 * ❌ Mensagens de erro para datas inválidas
 * 📲 Layout responsivo para diferentes dispositivos
 * 🧠 Validação precisa de campos (dia, mês, ano)
-* ✨ (Planejado) Animação nos números
-* ♿ (Planejado) Melhorias de acessibilidade
+* ✨ Animação nos números
 
 ## 🖼️ Captura de Tela
 
@@ -28,7 +27,7 @@ Este projeto foi desenvolvido como parte do desafio do Frontend Mentor. A aplica
 
 ## ⚙️ Tecnologias Utilizadas
 
-[![Tech Stack](https://skillicons.dev/icons?i=html,css,js,vercel,figma)](https://skillicons.dev)
+[![Tech Stack](https://skillicons.dev/icons?i=html,css,js,vercel,figma,vite)](https://skillicons.dev)
 
 ## 🛠️ Como Rodar Localmente
 
